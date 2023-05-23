@@ -9,29 +9,11 @@
 <body>
   <script>
     const randomNumber = Math.random();
-    let result = '';
-    let guess = 'tails';
+    const result = randomNumber < 0.5 ? 'heads' : 'tails';
 
-    console.log(randomNumber);
-
-    randomNumber < 0.5 ? result = 'heads' : result = 'tails';
-/*
-    if (randomNumber < 0.5) {
-      result = 'heads';
-    } else {
-      result = 'tails';
-    }
-*/
-    console.log(result);
-
-    guess === result ? console.log('You win!') : console.log('You lose!');
-/*
-    if (guess === result) {
-      console.log('You win!');
-    } else {
-      console.log('You lose!');
-    }
-*/
+    const guess = 'tails';
+    console.log(guess === result ? 'You win!' : 'You lose!');
+    
   </script>
 </body>
 </html>
