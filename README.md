@@ -1,6 +1,6 @@
 # JavaScript Course by SuperSimpleDev
 
-[![SuperSimpleDev](https://www.youtube.com/@SuperSimpleDev/featured)
+[![SuperSimpleDev](https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y.png)](https://www.youtube.com/@SuperSimpleDev/featured)
 
 Welcome to the JavaScript Course repository by SuperSimpleDev! This repository contains the code and resources I used during my JavaScript course on YouTube.
 
