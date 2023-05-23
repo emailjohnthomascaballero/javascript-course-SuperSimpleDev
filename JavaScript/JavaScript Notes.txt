@@ -1,0 +1,109 @@
+
+1. When calculating money:
+
+Calculate in cents
+Convert back to dollars
+
+       #cents       #dollars
+
+'$' + (2095 + 799) / 100
+
+output: '$28.94'
+
+
+
+
+2. Always use (') single quote as default:
+
+'hello'
+
+"I'm John"
+
+
+
+
+3. Always use 2 spaces per indent in HTML, CSS & JS
+
+
+
+
+4. Do not use eval() function.
+
+However, it's important to note that using eval() can be dangerous if the string being evaluated is not trusted or comes from an untrusted source. 
+This is because eval() can execute any JavaScript code, including malicious code, and potentially compromise the security of your application. 
+It's generally recommended to avoid using eval() whenever possible, and to use safer alternatives like JSON.parse() or regular expressions to parse and evaluate strings.
+
+
+
+
+5. Interpolation is recommended much cleaner
+`Items (${1+1}): $${(2095 + 799) / 100}`
+
+
+
+
+6. Use single quotes as default
+'hello'
+`Items (${1+1}): $${(2095 + 799) / 100}`
+
+
+
+7. camelCase is the standard for JavaScript
+let cartQuantity = 0;
+
+
+
+8. Comparison Operators:
+always use === and !--
+do not use == and !=
+
+
+
+9. variables scope only exist inside the {...}
+
+
+
+10. Falsy Values:
+false	0	''	NaN	undefined	null
+any value not on this list is truthly
+
+if (cartQuality) {
+        console.log('cart has products');
+      }
+
+
+
+11. if else statement alternative or shortcut:
+true ? 'truthy' : 'falsly'
+
+if (true) {
+  'truthy'
+} else {
+  'falsy'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+=======================
+
+Math.random() - generates random math.
+
+
+
+
+
+
+
+
+
+
+
