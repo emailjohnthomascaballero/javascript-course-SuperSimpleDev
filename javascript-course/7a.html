@@ -9,11 +9,16 @@
 <body>
   <script>
     function greet(name){
-      console.log(`Hello! ${name}`);
+      if (!name) {
+        console.log(`Hello!`);
+      } else {
+        console.log(`Hello! ${name}`);
+      }
     }
 
     greet('John');
     greet('Anthony');
+    greet();
   </script>
 </body>
 </html>
