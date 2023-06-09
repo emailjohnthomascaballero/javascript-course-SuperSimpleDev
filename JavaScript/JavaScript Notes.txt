@@ -73,7 +73,8 @@ if (cartQuality) {
 
 
 
-11. if else statement alternative or shortcut:
+11. Ternary Operator:
+ if else statement alternative or shortcut:
 true ? 'truthy' : 'falsly'
 
 if (true) {
@@ -83,6 +84,50 @@ if (true) {
 }
 
 
+
+
+12. The early return pattern:
+The return early pattern in JavaScript is a simple way to reduce the number of else statements within a function body to zero. There are many reasons to prefer this pattern over using else statements.
+
+Reducing the total amount of code on the page
+Reduce line length by reducing logical complexity
+Improve Readability
+The essence of the return early pattern is to replace the need for else conditionals in JavaScript functions by using the return keyword in the body of the if statement.
+
+
+EXAMPLE CODE:
+
+
+function calculateGrade(score) {
+  if (score < 0 || score > 100) {
+    return 'Invalid score'; // early return for out-of-range scores
+  }
+
+  if (score >= 90) {
+    return 'A'; // early return for score >= 90
+  }
+
+  if (score >= 80) {
+    return 'B'; // early return for score >= 80
+  }
+
+  if (score >= 70) {
+    return 'C'; // early return for score >= 70
+  }
+
+  if (score >= 60) {
+    return 'D'; // early return for score >= 60
+  }
+
+  return 'F'; // default return for all other scores
+}
+
+console.log(calculateGrade(95));  // Output: 'A'
+console.log(calculateGrade(85));  // Output: 'B'
+console.log(calculateGrade(75));  // Output: 'C'
+console.log(calculateGrade(65));  // Output: 'D'
+console.log(calculateGrade(55));  // Output: 'F'
+console.log(calculateGrade(110)); // Output: 'Invalid score'
 
 
 
