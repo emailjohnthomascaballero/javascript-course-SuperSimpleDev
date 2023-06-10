@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body> 
+    <script>
+      const product = {
+        name: 'socks',
+        price: 1000
+      };
+      console.log(typeof product); //type of product
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = 'cotton socks'; //change name value
+      console.log(product);
+
+      product.newProperty = true; //add property
+      console.log(product);
+
+      delete product.newProperty; //delete property
+      console.log(product);
+    </script>
+  </body>
+</html>
+
+
