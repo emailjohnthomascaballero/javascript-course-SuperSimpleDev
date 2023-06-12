@@ -5,6 +5,7 @@
   </head>
   <body> 
     <script>
+      /*
       const product = {
         name: 'socks',
         price: 1000
@@ -22,6 +23,30 @@
 
       delete product.newProperty; //delete property
       console.log(product);
+      */
+
+      let product2 = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        deliveryTime: '2 days',
+        rating: {
+          stars: 4.5,
+          count: 90
+        },
+        fun: function function1() {
+          console.log('function inside object');
+        }
+      };
+
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2['name']);
+      console.log(product2['delivery-time']);
+      console.log(product2.deliveryTime);
+
+      console.log(product2.rating.stars);
+      product2.fun();
+
     </script>
   </body>
 </html>
