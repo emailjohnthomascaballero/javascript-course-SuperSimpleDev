@@ -132,6 +132,23 @@ console.log(calculateGrade(110)); // Output: 'Invalid score'
 
 
 
+13. JSON
+JSON.stringify() //convert js obj to JSON
+JSON.parse() //convert JSON to js obj
+
+
+EXAMPLE CODE:
+
+
+let student = {
+ name: 'john'
+ age: 20
+}
+
+JSON.stringify(student); //js obj to JSON
+
+jsonString = JSON.stringify(student); //JSON string
+JSON.parse(jsonString); //JSON to js obj
 
 
 

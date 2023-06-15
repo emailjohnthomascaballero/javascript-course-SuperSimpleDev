@@ -24,9 +24,7 @@
     ">Reset Score</button>
 
     <script>
-      let score = JSON.parse(localStorage.getItem('score'));
-
-      console.log(); //localStorage
+      let score = JSON.parse(localStorage.getItem('score')); //localStorage - convert JSON to js obj
 
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
@@ -69,7 +67,7 @@
         score.ties += 1;
       }
 
-      localStorage.setItem('score', JSON.stringify(score)); //localStorage
+      localStorage.setItem('score', JSON.stringify(score)); //localStorage - convert js obj to JSON
 
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
 Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
