@@ -25,6 +25,7 @@
       console.log(product);
       */
 
+      /*
       let product2 = {
         name: 'shirt',
         'delivery-time': '1 day',
@@ -54,6 +55,53 @@
 
       const jsonString = JSON.stringify(product2);
       console.log(JSON.parse(jsonString)); //convert JSON to js obj
+      */
+
+      console.log('john'.length);
+      console.log('john'.toUpperCase());
+
+      const object1 = {
+        name: 'john'
+      }
+
+      const object2 = object1;
+
+      const object3 = {
+        name: 'john'
+      }
+
+      console.log(object1.name); 
+
+      console.log(object1 === object3);
+
+      const object4 = {
+        message: "hello world",
+        price: 69
+      }
+
+      // const message = object4.message;
+      const { message, price } = object4; // destructuring
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        message: message,
+        price, //shorthand property
+
+        method1: function function1() {
+          console.log('method');
+        },
+
+        //shorthand method
+        method2() { 
+          console.log('method2');
+        }
+      }
+
+      console.log(object5.message);
+      console.log(object5.price);
+      object5.method1();
+      object5.method2();
 
     </script>
   </body>
