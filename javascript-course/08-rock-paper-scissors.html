@@ -25,7 +25,13 @@
     ">Reset Score</button>
 
     <script>
-      let score = JSON.parse(localStorage.getItem('score')); //localStorage - convert JSON to js obj
+      //localStorage - convert JSON to js obj
+      //left if the score is true, or right if it is falsey
+      let score = JSON.parse(localStorage.getItem('score'))  || {
+         wins: 0,
+         losses: 0,
+         ties: 0
+        };
 
       if (score === null){
         score = {
