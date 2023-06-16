@@ -153,6 +153,12 @@ JSON.parse(jsonString); //JSON to js obj
 
 
 
+14. Local storage
+localStorage.getItem() //get data
+localStorage.setItem() //set data
+
+
+
 
 
 =======================
