@@ -10,22 +10,22 @@
   <script>
      function comparePrice(product1, product2) {
         if (product1.price > product2.price) {
-          return product2;
+          return product2.price;
         } else {
-          return product1;
+          return product1.price;
         }
-      }
+     }
 
      const product1 = {
         name: 'basketball',
-        price: 2595
+        price: 2495
       };
 
       const product2 = {
-        name: 'vollleyball',
+        name: 'volleyball',
         price: 2095
       };
-
+    
       console.log(comparePrice(product1, product2));
   </script>
 </body>
