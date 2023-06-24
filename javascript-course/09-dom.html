@@ -7,7 +7,13 @@
     <button>hello</button>
     
     <script>
-      document.body.innerHTML = 'hi';
+      console.log(document.title);
+      console.log(document.body);
+      console.log(typeof document.body);
+      console.log(document.body.innerHTML);
+
+      document.body.innerHTML = '<button>nice</button>';
+      document.title = 'john';
     </script>
   </body>
 </html>
