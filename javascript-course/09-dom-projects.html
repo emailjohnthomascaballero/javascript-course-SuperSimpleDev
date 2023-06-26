@@ -5,20 +5,20 @@
   </head>
   <body>
     <p>YouTube Subscribe Button</p>
-    <button class="js-subscribe-button" onclick="
-    const buttonElement = document.querySelector('.js-subscribe-button');
-
-    if (buttonElement.innerHTML === 'Subscribe') {
-      document.querySelector('.js-subscribe-button').innerHTML = 'Subscribed';
-    } else {
-      document.querySelector('.js-subscribe-button').innerHTML = 'Subscribe';
-    }
-    
-    ">Subscribe</button>
+    <button onclick="
+      subscribeButton();
+    " class="js-subscribe-button">Subscribe</button>
      
     <script>
-      
-    
+      function subscribeButton() {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if (buttonElement.innerHTML === 'Subscribe') {
+          document.querySelector('.js-subscribe-button').innerHTML = 'Subscribed';
+        } else {
+          document.querySelector('.js-subscribe-button').innerHTML = 'Subscribe';
+        }
+      };
     </script>
   </body>
 </html>
