@@ -17,6 +17,8 @@
       playGame('Scissors');
     ">Scissors</button>
 
+    <p class="js-score"></p>
+
     <button onclick="
       score.wins = 0;
       score.losses = 0;
@@ -88,6 +90,7 @@
 
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
 Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+
       }
       
 
