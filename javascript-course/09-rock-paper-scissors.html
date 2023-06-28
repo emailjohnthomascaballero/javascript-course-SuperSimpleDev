@@ -34,6 +34,9 @@
          losses: 0,
          ties: 0
         };
+      //update class js-score paragraph
+      document.querySelector('.js-score')
+        .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 
       /*
       if (score === null){
@@ -85,6 +88,8 @@
       } else if (result === 'Tie.') {
         score.ties += 1;
       }
+      
+      updateScoreElement();
 
       localStorage.setItem('score', JSON.stringify(score)); //localStorage - convert js obj to JSON
 
@@ -93,6 +98,10 @@ Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
 
       }
       
+      function updateScoreElement() {
+        document.querySelector('.js-score')
+        .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+      }
 
       function pickComputerMove(){
         const randomNumber = Math.random();
