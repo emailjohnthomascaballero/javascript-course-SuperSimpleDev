@@ -37,7 +37,8 @@
          losses: 0,
          ties: 0
         };
-        
+      
+      updateResultElement();
       updateScoreElement();
 
       /*
@@ -90,14 +91,28 @@
       } else if (result === 'Tie.') {
         score.ties += 1;
       }
-      
+
+      updateResultElement();
       updateScoreElement();
 
       localStorage.setItem('score', JSON.stringify(score)); //localStorage - convert js obj to JSON
 
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
 Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+      }
 
+      function updateResultElement() {
+        if (score.wins > score.losses) {
+          document.querySelector('.js-result')
+        .innerHTML = 'You win';
+        } else if (score.wins === score.losses) {
+          document.querySelector('.js-result')
+        .innerHTML = 'Tie';
+        }
+        else {
+          document.querySelector('.js-result')
+        .innerHTML = 'You lose';
+        }
       }
       
       function updateScoreElement() {
