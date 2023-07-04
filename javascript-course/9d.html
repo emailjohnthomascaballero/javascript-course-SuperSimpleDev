@@ -7,7 +7,9 @@
   <title>DOM</title>
 </head>
 <body>
-  <input placeholder="name" class="js-input-name">
+  <input placeholder="name" class="js-input-name" onkeydown="
+    nameKeydown();
+  ">
   <button onclick="
     inputName();
   ">Submit</button>
@@ -15,6 +17,12 @@
   <p class="js-text"></p>
   
   <script>
+    function nameKeydown() {
+      if (event.key === 'Enter') {
+        inputName();
+      }
+    }
+   
     function inputName() {
       const nameElement = document.querySelector('.js-input-name');
         document.querySelector('.js-text')
