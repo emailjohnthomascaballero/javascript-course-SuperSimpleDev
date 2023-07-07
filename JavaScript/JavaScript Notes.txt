@@ -161,6 +161,16 @@ localStorage.removeItem() //remove data
 
 
 
+15. Best practice in CSS
+-create another separate class for css
+<button 
+	class="js-subscribe-button subscribe-button">
+Subscribe</button>
+
+
+
+
+
 =======================
 
 Math.random() - generates random math.
