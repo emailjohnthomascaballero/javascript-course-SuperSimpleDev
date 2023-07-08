@@ -12,6 +12,11 @@
         border-radius: 50px;
         cursor: pointer;
       }
+
+      .is-subscribed {
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -50,9 +55,11 @@
         const buttonElement = document.querySelector('.js-subscribe-button');
 
         if (buttonElement.innerHTML === 'Subscribe') {
-          document.querySelector('.js-subscribe-button').innerHTML = 'Subscribed';
+          buttonElement.innerHTML = 'Subscribed';
+          buttonElement.classList.add('is-subscribed'); //add is-subscribed class
         } else {
-          document.querySelector('.js-subscribe-button').innerHTML = 'Subscribe';
+          buttonElement.innerHTML = 'Subscribe';
+          buttonElement.classList.remove('is-subscribed'); //remove is-subscribed class
         }
       };
     </script>
