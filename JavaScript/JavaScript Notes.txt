@@ -170,6 +170,11 @@ Subscribe</button>
 
 
 
+16. padding - space inside the element
+    margin - space outside the element
+
+
+
 
 =======================
 
