@@ -1,0 +1,8 @@
+.add-to-cart-button {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  border-radius: 15px;
+  color: black;
+  padding: 8px 40px;
+  cursor: pointer;
+}
