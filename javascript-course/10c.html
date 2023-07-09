@@ -5,14 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CLASS LIST</title>
+
+  <style>
+    .js-button {
+      background-color: black;
+      color: white;
+      padding: 8px 10px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .is-toggled {
+      background-color: white;
+      color: black;
+      padding: 8px 10px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    
+    </style>
 </head>
 <body>
-  <button class="js-button">Test</button>
+  <button onclick="
+    toggleButton();
+    " class="js-button is-toggled">Gaming</button>
 
   <script>
-    const buttonElement = document.querySelector('.js-button');
-    const classList = buttonElement.classList.contains('js-button');
-    console.log(classList);
+    function toggleButton() {
+      const buttonElement = document.querySelector('.js-button');
+
+      if (buttonElement.classList.contains('is-toggled')) {
+        buttonElement.classList.remove('is-toggled');
+      } else {
+        buttonElement.classList.add('is-toggled');
+      }
+    }
   </script>
 </body>
 </html>
