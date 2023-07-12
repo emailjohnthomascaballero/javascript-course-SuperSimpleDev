@@ -22,46 +22,24 @@
       background-color: white;
       color: black;
     }
-
-    
     </style>
 </head>
 <body>
   <button onclick="
-    toggleButton();
+    toggleButton('.js-button');
     " class="js-button is-toggled">Gaming</button>
 
   <button onclick="
-    toggleButton2();
+    toggleButton('.js-button-2');
     " class="js-button-2 is-toggled">Music</button>
 
   <button onclick="
-    toggleButton3();
+    toggleButton('.js-button-3');
     " class="js-button-3 is-toggled">Tech</button>
 
   <script>
-    function toggleButton() {
-      const buttonElement = document.querySelector('.js-button');
-
-      if (buttonElement.classList.contains('is-toggled')) {
-        buttonElement.classList.remove('is-toggled');
-      } else {
-        buttonElement.classList.add('is-toggled');
-      }
-    }
-
-    function toggleButton2() {
-      const buttonElement = document.querySelector('.js-button-2');
-
-      if (buttonElement.classList.contains('is-toggled')) {
-        buttonElement.classList.remove('is-toggled');
-      } else {
-        buttonElement.classList.add('is-toggled');
-      }
-    }
-
-    function toggleButton3() {
-      const buttonElement = document.querySelector('.js-button-3');
+    function toggleButton(selector) {
+      const buttonElement = document.querySelector(selector);
 
       if (buttonElement.classList.contains('is-toggled')) {
         buttonElement.classList.remove('is-toggled');
