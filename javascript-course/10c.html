@@ -26,25 +26,66 @@
 </head>
 <body>
   <button onclick="
-    toggleButton('.js-button');
+    toggleButton();
     " class="js-button is-toggled">Gaming</button>
 
   <button onclick="
-    toggleButton('.js-button-2');
+    toggleButton2();
     " class="js-button-2 is-toggled">Music</button>
 
   <button onclick="
-    toggleButton('.js-button-3');
+    toggleButton3();
     " class="js-button-3 is-toggled">Tech</button>
 
   <script>
-    function toggleButton(selector) {
-      const buttonElement = document.querySelector(selector);
+    function toggleButton() {
+      const buttonElement = document.querySelector('.js-button');
+      const buttonElement2 = document.querySelector('.js-button-2');
+      const buttonElement3 = document.querySelector('.js-button-3');
 
-      if (buttonElement.classList.contains('is-toggled')) {
-        buttonElement.classList.remove('is-toggled');
-      } else {
-        buttonElement.classList.add('is-toggled');
+      if (buttonElement2.classList.contains('is-toggled') &&
+          buttonElement3.classList.contains('is-toggled')) {
+        
+            if (buttonElement.classList.contains('is-toggled')) {
+              buttonElement.classList.remove('is-toggled');
+            } else {
+              buttonElement.classList.add('is-toggled');
+            }
+
+      }
+    }
+
+    function toggleButton2() {
+      const buttonElement = document.querySelector('.js-button');
+      const buttonElement2 = document.querySelector('.js-button-2');
+      const buttonElement3 = document.querySelector('.js-button-3');
+
+      if (buttonElement.classList.contains('is-toggled') &&
+          buttonElement3.classList.contains('is-toggled')) {
+        
+            if (buttonElement2.classList.contains('is-toggled')) {
+              buttonElement2.classList.remove('is-toggled');
+            } else {
+              buttonElement2.classList.add('is-toggled');
+            }
+            
+      }
+    }
+
+    function toggleButton3() {
+      const buttonElement = document.querySelector('.js-button');
+      const buttonElement2 = document.querySelector('.js-button-2');
+      const buttonElement3 = document.querySelector('.js-button-3');
+
+      if (buttonElement.classList.contains('is-toggled') &&
+          buttonElement2.classList.contains('is-toggled')) {
+        
+            if (buttonElement3.classList.contains('is-toggled')) {
+              buttonElement3.classList.remove('is-toggled');
+            } else {
+              buttonElement3.classList.add('is-toggled');
+            }
+            
       }
     }
   </script>
