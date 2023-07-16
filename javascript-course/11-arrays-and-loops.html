@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays and Loops</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <script>
+      const myArray = [
+        10, 
+        20, 
+        30
+      ];
+      console.log(myArray);
+
+      console.log(myArray[2]);
+
+      myArray[1] = 69;
+      console.log(myArray);
+
+      const myArray2 = [1, 'hello', true, { name: 'socks' }, [1, 2 ]];
+      console.log(typeof myArray);
+
+      console.log(Array.isArray(myArray2)); //check if myArray2 is an Array.
+
+      console.log(myArray2.length); //check array length.
+
+      myArray.push(100); //add value from array.
+      console.log(myArray);
+
+      myArray.splice(0, 1); // index we want to remove and number of values to remove.
+      console.log(myArray);
+    </script>
+  </body>
+</html>
+
+
+ 
