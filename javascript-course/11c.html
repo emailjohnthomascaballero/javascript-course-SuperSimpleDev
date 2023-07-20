@@ -8,13 +8,23 @@
   </head>
   <body>
     <script>
-      arraySwap(['hi', 'hello', 'good']);
+      console.log(arraySwap([1, 20, 22, 24, 5]));
+      console.log(arraySwap(['hi', 'hello', 'good']));
 
       function arraySwap(array) {
-        for (let i = array.length -1; i >= 0; i--) {
-         console.log(array[i]);
-         //console.log('test');
-        }
+        const arrayLength = array.length -1;
+        console.log(arrayLength);
+
+        const lastIndex = array[arrayLength];
+        console.log(lastIndex);
+
+        const firstIndex = array[0];
+        console.log(firstIndex);
+
+        array[0] = lastIndex;
+        array[arrayLength] = firstIndex;
+
+        return array
       }
     </script>
   </body>
